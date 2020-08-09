@@ -2,6 +2,7 @@ let button = document.getElementById('trollButton');
 
 window.onload = function() {
     document.getElementById("audio").play();
+    document.getElementById("blocker").style.display="none";
 }
 
 let chase = 0

@@ -2,6 +2,15 @@
     --posX: 50%;
     --posY: 50%;
 }
+@media only screen and (orientation:portrait){
+    body>*{
+        display:none !important;
+    }
+    #phone{
+        display:block !important;
+        color:white;
+    }
+}
 body{
     background-color:black;
     padding:0;
@@ -106,4 +115,13 @@ a{
 }
 span:hover{
     cursor:pointer;
+}
+#blocker{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background-color:black;
+    z-index:10;
 }
