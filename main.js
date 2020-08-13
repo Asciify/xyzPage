@@ -32,6 +32,11 @@ function clicked(){
 
 let pbr = 1.0;
 
+function change(){
+    if(!flag)return;
+    location.href = 'fb.html';
+}
+
 function lightsOn(){
     if(document.body.style.backgroundColor == 'black'){
         document.body.style.backgroundColor = 'white';
@@ -54,6 +59,9 @@ function lightsOn(){
         if(pbr <= 0){
             flag = true;
             document.getElementById('troll-button').textContent="Presioname :("
+            document.getElementById('img1').style.visibility='hidden';
+            document.getElementById('img2').style.visibility='hidden';
+            document.getElementById('tv').style.background='black';
         }
     }
 }
