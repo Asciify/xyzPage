@@ -125,3 +125,12 @@ span:hover{
     background-color:black;
     z-index:10;
 }
+#blockerMsg{
+    color:white;
+    z-index:11;
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:grey;
+}
